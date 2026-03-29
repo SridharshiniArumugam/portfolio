@@ -1,0 +1,77 @@
+.projects {
+  padding: 4rem 2rem;
+     background-color: rgb(27, 26, 26);
+  color: #fff;
+}
+
+.projects-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #38bdf8;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #38bdf8;
+}
+
+.project-meta {
+  font-size: 0.95rem;
+  color: #aaa;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.project-client {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.project-desc {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+/* Tech badges */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-badge {
+  background: #2563eb;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.tech-badge:hover {
+  background: #1e40af;
+}

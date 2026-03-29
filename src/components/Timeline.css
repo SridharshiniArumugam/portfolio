@@ -1,0 +1,83 @@
+.timeline {
+  padding: 6rem 2rem;
+    background-color: rgb(27, 26, 26);
+  color: #fff;
+  position: relative;
+}
+
+.timeline-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #38bdf8;
+}
+
+/* Vertical line */
+.timeline-line {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 2rem;
+  border-left: 2px solid #38bdf8;
+  max-width: 800px;
+}
+
+/* Each item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -7px; /* aligns with line */
+  top: 0.5rem;
+  width: 14px;
+  height: 14px;
+  background: #38bdf8;
+  border-radius: 50%;
+  border: 2px solid #111;
+}
+
+.timeline-content {
+  background: #1a1a1a;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+.timeline-role {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-year {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.timeline-points {
+  list-style-type: "➢ ";
+  padding-left: 1rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.timeline-points li {
+  margin-bottom: 0.5rem;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #2563eb;
+}
+
+[data-theme="dark"] {
+  --bg-color: #111111;
+  --text-color: #ffffff;
+  --accent-color: #38bdf8;
+}

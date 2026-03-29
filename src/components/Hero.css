@@ -1,0 +1,98 @@
+
+.hero {
+    width: 100%;                /* full width */
+background-color: rgb(27, 26, 26);
+  color: #fff;
+  display: flex;
+  align-items: flex-start; /* move content slightly upward */
+  justify-content: center;
+  padding: 24px;
+  gap: 4px;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.hero-img-landscape {
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(255,255,255,0.2);
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* push content upward */
+  margin-top: 200px; /* adjust upward positioning */
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero-summary {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+  max-width: 600px;
+}
+
+.highlight {
+  color: #ddd;
+}
+
+/* 👋 wave animation */
+.wave {
+  display: inline-block;
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* CV button */
+.hero-button {
+  padding: 0.75rem 1.5rem;
+  background: #38bdf8;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: fit-content;
+}
+
+.hero-button:hover {
+  background: #38bdf8;
+  transform: translateY(-2px);
+}
+
+
