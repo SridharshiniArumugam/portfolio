@@ -6,7 +6,6 @@ background-color: rgb(27, 26, 26);
   display: flex;
   align-items: flex-start; /* move content slightly upward */
   justify-content: center;
-  padding: 24px;
   gap: 4px;
 }
 

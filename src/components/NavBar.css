@@ -2,7 +2,7 @@
   position: sticky;       /* keeps it fixed at the top */
   top: 0;
   z-index: 1000;          /* ensures it stays above other content */
-  background-color: rgb(27, 26, 26);
+  background-color: whitesmoke;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,8 +12,6 @@
 
 .navbar-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +21,7 @@
   font-size: 1.5rem;
   font-weight: 800;
   color: rgb(27, 26, 26);
+  margin-right: 300px;
 }
 
 .navbar-links {

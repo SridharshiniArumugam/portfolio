@@ -1,5 +1,6 @@
 import React from "react";
 import "./Skills.css";
+import { motion } from "framer-motion";
 
 const skills = [
   { name: "React", description: "Component-based UI library" },
@@ -33,13 +34,21 @@ export default function Skills() {
     <section className="skills">
       <h2 className="skills-title">Skills</h2>
       <div className="skills-grid">
-        {skills.map((skill, i) => (
-          <div key={i} className="skill-card">
-            <h3 className="skill-name">{skill.name}</h3>
-            <p className="skill-desc">{skill.description}</p>
-          </div>
-        ))}
-      </div>
+  {skills.map((skill, i) => (
+    <motion.div
+      key={i}
+      className="skill-card"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: i * 0.1, duration: 0.5 }}
+    >
+      <h3 className="skill-name">{skill.name}</h3>
+      <p className="skill-desc">{skill.description}</p>
+    </motion.div>
+  ))}
+</div>
     </section>
   );
 }
+
+

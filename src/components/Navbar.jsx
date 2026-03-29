@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./NavBar.css"; // 👈 import CSS
+import "./Navbar.css"; // 👈 import CSS
 
 export default function Navbar() {
 
@@ -9,7 +9,6 @@ export default function Navbar() {
       <div className="navbar-container">
         {/* Logo */}
         <h1 className="navbar-logo" style={{color:"rgb(27, 26, 26)"}}>Frontend Engineer - ReactJS</h1>
-
         {/* Links */}
         <div className="navbar-links">
           <Link to="/" className="nav-link">Home</Link>
